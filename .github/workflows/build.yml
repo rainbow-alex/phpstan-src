@@ -300,7 +300,7 @@ jobs:
         run: "composer update --no-interaction --no-progress --no-suggest"
 
       - name: "Cache Result cache"
-        uses: actions/cache@v1
+        uses: actions/cache@v2.1.0
         with:
           path: ./tmp
           key: "result-cache-v4"
